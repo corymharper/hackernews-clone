@@ -28,6 +28,10 @@ type Link {
   postedBy: User
 }
 
+type Subscription {
+  newLink: Link
+}
+
 type Query {
   # Fetch a single link by its `id`
   link(id: ID!): Link
